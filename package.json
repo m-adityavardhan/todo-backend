@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "build-start": "tsc && node dist/index.js",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +16,12 @@
     "express": "^5.1.0",
     "mysql2": "^3.14.3",
     "prisma": "^6.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }
