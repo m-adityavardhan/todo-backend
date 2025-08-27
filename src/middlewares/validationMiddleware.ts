@@ -2,7 +2,10 @@ import { Request, Response, NextFunction } from 'express';
 import { ObjectSchema } from 'joi';
 import { requestProperties } from '../utils/models';
 
-export function validateRequest(schema: ObjectSchema, property: requestProperties = 'body') {
+export function validateRequest(
+  schema: ObjectSchema,
+  property: requestProperties = 'body'
+) {
   return (req: Request, res: Response, next: NextFunction) => {
     const { error } = schema.validate(req[property]);
     if (error) {
