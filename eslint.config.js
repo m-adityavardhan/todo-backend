@@ -4,13 +4,8 @@ import tsparser from '@typescript-eslint/parser';
 import prettier from 'eslint-config-prettier';
 
 export default [
-  // Base configuration for all files
   js.configs.recommended,
-
-  // Prettier configuration (disables conflicting ESLint rules)
   prettier,
-
-  // TypeScript files configuration
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
@@ -51,22 +46,18 @@ export default [
       '@typescript-eslint': tseslint,
     },
     rules: {
-      // TypeScript specific rules
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/no-misused-promises': 'error',
-
-      // General rules
       'prefer-const': 'error',
       'no-var': 'error',
       'no-console': 'warn',
     },
   },
 
-  // JavaScript files configuration
   {
     files: ['**/*.js', '**/*.mjs'],
     languageOptions: {
@@ -105,8 +96,6 @@ export default [
       'no-console': 'warn',
     },
   },
-
-  // Ignore patterns
   {
     ignores: [
       'node_modules/**',

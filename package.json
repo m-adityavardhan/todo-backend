@@ -1,10 +1,10 @@
 {
   "name": "todo-backend",
   "version": "1.0.0",
-  "main": "server.ts",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
-    "build-start": "tsc && node dist/server.js",
+    "build-start": "tsc && node dist/src/server.js",
     "start": "ts-node src/server.ts",
     "dev": "nodemon src/server.ts",
     "test": "jest",
