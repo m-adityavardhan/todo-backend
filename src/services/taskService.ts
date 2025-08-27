@@ -28,14 +28,14 @@ export class TaskService {
   async findTaskById(id: string) {
     return this.prisma.task.findUnique({
       where: { id },
-    });
+    }); 
   }
 
   async updateTask(id: string, updates: UpdateTaskRequest) {
     const data: UpdateTaskRequest = {
-      ...(updates.title && { title: updates.title.trim() }),
-      ...(updates.color && { color: updates.color }),
-      ...(updates.completed && { completed: updates.completed }),
+      ...(updates.title != undefined && { title: updates.title.trim() }),
+      ...(updates.color != undefined && { color: updates.color }),
+      ...(updates.completed != undefined && { completed: updates.completed }),
     };
     return this.prisma.task.update({
       where: { id },

@@ -13,13 +13,13 @@ export type requestProperties = 'body' | 'query' | 'params';
 
 /* eslint-disable no-unused-vars */
 export enum TaskColor {
-  RED,
-  ORANGE,
-  YELLOW,
-  GREEN,
-  BLUE,
-  PURPLE,
-  PINK,
-  BROWN,
+  RED = 'red',
+  ORANGE = 'orange',
+  YELLOW = 'yellow',
+  GREEN = 'green',
+  BLUE = 'blue',
+  PURPLE = 'purple',
+  PINK = 'pink',
+  BROWN = 'brown',
 }
  

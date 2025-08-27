@@ -3,7 +3,7 @@ import {
   CreateTaskRequest,
   UpdateTaskRequest,
   TaskColor,
-} from '../utils/models.js';
+} from '../utils/models';
 
 export const taskFilterSchema = joi.object({
   color: joi
