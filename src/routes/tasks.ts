@@ -15,14 +15,14 @@ const taskController = new TaskController();
 router.get(
   '/',
   validateRequest(taskFilterSchema, 'query'),
-  taskController.getTasks
+  taskController.getTasks.bind(taskController)
 );
 
 // Create a new task
 router.post(
   '/',
   validateRequest(taskCreateSchema, 'body'),
-  taskController.createTask
+  taskController.createTask.bind(taskController)
 );
 
 // Update a task
@@ -30,14 +30,14 @@ router.put(
   '/:id',
   validateRequest(taskIdSchema, 'params'),
   validateRequest(taskUpdateSchema, 'body'),
-  taskController.updateTask
+  taskController.updateTask.bind(taskController)
 );
 
 // Delete a task
 router.delete(
   '/:id',
   validateRequest(taskIdSchema, 'params'),
-  taskController.deleteTask
+  taskController.deleteTask.bind(taskController)
 );
 
 export default router;
