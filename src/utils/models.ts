@@ -22,4 +22,3 @@ export enum TaskColor {
   PINK = 'pink',
   BROWN = 'brown',
 }
- 
