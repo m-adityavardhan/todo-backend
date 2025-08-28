@@ -18,6 +18,7 @@ export enum TaskColor {
   YELLOW = 'yellow',
   GREEN = 'green',
   BLUE = 'blue',
+  INDIGO = 'indigo',
   PURPLE = 'purple',
   PINK = 'pink',
   BROWN = 'brown',
