@@ -351,4 +351,11 @@ Check console output for detailed error messages and debugging information.
 - [Jest Testing Framework](https://jestjs.io/)
 
 
+## 🔗 Related Repositories
+
+- **Backend**: [Todo App Backend](https://github.com/m-adityavardhan/todo-backend) - API and database
+- **Frontend**: [Todo App Frontend](https://github.com/m-adityavardhan/todo-frontend) - User interface
+
+
+
 
