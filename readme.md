@@ -343,6 +343,11 @@ The frontend should be configured to make requests to:
 
 Check console output for detailed error messages and debugging information.
 
+## Coming Soon 
+- IOC for services and controllers
+- Patch call to update isCompleted flag
+
+
 ## 📚 Additional Resources
 
 - [Prisma Documentation](https://www.prisma.io/docs/)
@@ -350,12 +355,9 @@ Check console output for detailed error messages and debugging information.
 - [TypeScript Documentation](https://www.typescriptlang.org/)
 - [Jest Testing Framework](https://jestjs.io/)
 
-
 ## 🔗 Related Repositories
 
 - **Backend**: [Todo App Backend](https://github.com/m-adityavardhan/todo-backend) - API and database
 - **Frontend**: [Todo App Frontend](https://github.com/m-adityavardhan/todo-frontend) - User interface
-
-
 
 
